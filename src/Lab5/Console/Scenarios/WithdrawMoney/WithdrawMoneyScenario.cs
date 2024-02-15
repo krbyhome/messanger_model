@@ -18,7 +18,7 @@ public class WithdrawMoneyScenario : IScenario
     public void Run()
     {
         long money = AnsiConsole.Ask<long>("Enter sum: ");
-        OperationResult result = _account.DepositMoney(money);
+        OperationResult result = _account.WithdrawMoney(money);
 
         string message = result switch
         {

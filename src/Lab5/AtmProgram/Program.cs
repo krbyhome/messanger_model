@@ -37,6 +37,7 @@ public static class Program
         while (true)
         {
             scenarioRunner.Run();
+            Thread.Sleep(1000);
             AnsiConsole.Clear();
         }
     }
